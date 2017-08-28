@@ -8,4 +8,9 @@
 <p>Engine: <%= @airplane.engine %></p>
 <p>Speed (miles/hr): <%= @airplane.speed %></p>
 <p>Passenger: <%= @airplane.passenger %></p>
-<p>Weight (tonnes without passenger)</p>
+<p>Weight (tonnes without passenger): <%= @airplane.weight %></p>
+
+<div class="controls">
+  <%= link_to "Edit airplane", edit_airplane_path(@airplane) %>
+  <%= link_to "Delete airplane", @airplane, :method => :delete, :data => {:confirm => 'Are you sure?'} %>
+</div>

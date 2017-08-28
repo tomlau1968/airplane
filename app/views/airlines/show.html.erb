@@ -1,0 +1,16 @@
+<h1><%= @airline.name %></h1>
+
+<% unless @airline.image.nil? %>
+<%= image_tag @airline.image, class => 'feature'%>
+<% end %>
+
+<p>Name: <%= @airline.name %></p>
+<p>Location: <%= @airline.location %></p>
+<p>Fuel (gallons/year): <%= @airline.fuel %></p>
+<p>Number of planes: <%= @airline.num_plane %></p>
+<p>Type of plane: <%= @airline.type_plane %></p>
+
+<div class="controls">
+  <%= link_to "Edit airline", edit_airlne_path(@airline) %>
+  <%= link_to "Delete airline", @airline, :method => :delete, :data => {:confirm => 'Are you sure?'} %>
+</div>
