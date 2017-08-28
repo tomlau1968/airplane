@@ -1,0 +1,13 @@
+<h1>All Airlines</h1>
+
+<%= @airlines.each do |airline| %>
+ <%= image_tag airline.image, :class => 'thumb' %>
+ <ul>
+   <li>Name: <%= link_to airline.name, airline %></li>
+   <li>Location: <%= airline.location %></li>
+   <li>Fuel used per year: <%=  airline.fuel %></li>
+   <li>Number of planes: <%= airline.num_plane %></li>
+   <li>Type of plane: <%= airline.type_plane %></li>
+ </ul>
+
+<% end %>

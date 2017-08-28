@@ -1,0 +1,11 @@
+<h1><%= @airplane.name %></h1>
+
+<% unless @airplane.image.nil? %>
+<%= image_tag @airplane.image, :class => 'feature' %>
+<% end %>
+
+<p>Name: <%= @airplane.name %></p>
+<p>Engine: <%= @airplane.engine %></p>
+<p>Speed (miles/hr): <%= @airplane.speed %></p>
+<p>Passenger: <%= @airplane.passenger %></p>
+<p>Weight (tonnes without passenger)</p>

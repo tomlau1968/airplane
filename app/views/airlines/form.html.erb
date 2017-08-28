@@ -1,0 +1,36 @@
+<%= form_for @airline do |f| %>
+<fieldset>
+<%= f.label :name %>
+<%= f.text_field :name, :autofocus => true  %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :fuel %>
+  <%= f.text_field :fuel, "gallons/hour" %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :num_plane %>
+  <%= f.text_field :num_plane %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :type_plane %>
+  <%= f.text_field :type_plane %>
+</fieldset>
+
+<fieldset>
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+</fieldset>
+<fieldset>
+  <label></label>
+  <%= f.submit %>
+</fieldset>
+
+<%= end %>

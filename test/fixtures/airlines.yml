@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  location: MyText
+  num_plane: 1
+  fuel: 1
+  type_plane: MyText
+
+two:
+  name: MyText
+  location: MyText
+  num_plane: 1
+  fuel: 1
+  type_plane: MyText

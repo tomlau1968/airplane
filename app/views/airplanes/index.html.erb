@@ -1,0 +1,13 @@
+<h1>All Airplanes</h1>
+
+<% @airplanes.each do |airplane| %>
+ <%= image_tag airplane.image, :class => 'thumb' unless airplane.image.nil?%>
+ <ul>
+   <li>Name: <%= link_to airplane.name, airplane %></li>
+   <li>Engine: <%= airplane.engine %></li>
+   <li>Maxiumn Speed: <%=  airplane.speed %></li>
+   <li>Maxiumn Passenger: <%= airplane.passenger %></li>
+   <li>Weight without passenger: <%= airplane.weight %></li>
+ </ul>
+
+<% end %>
