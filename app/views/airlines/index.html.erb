@@ -1,7 +1,7 @@
 <h1>All Airlines</h1>
 
-<%= @airlines.each do |airline| %>
- <%= image_tag airline.image, :class => 'thumb' %>
+<% @airlines.each do |airline| %>
+ <%= image_tag airline.image, :class => 'thumb' unless airline.image.nil?%>
  <ul>
    <li>Name: <%= link_to airline.name, airline %></li>
    <li>Location: <%= airline.location %></li>
