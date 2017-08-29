@@ -1,13 +1,19 @@
+<div class="headline">
 <h1>All Airlines</h1>
+</div>
 
+ <%= image_tag "maxresdefault.jpg", :class => 'bgimg' %>
+
+ <div class="inputbox">
 <% @airlines.each do |airline| %>
- <%= image_tag airline.image, :class => 'thumb' unless airline.image.nil?%>
- <ul>
-   <li>Name: <%= link_to airline.name, airline %></li>
-   <li>Location: <%= airline.location %></li>
-   <li>Fuel used per year: <%=  airline.fuel %></li>
-   <li>Number of planes: <%= airline.num_plane %></li>
-   <li>Type of plane: <%= airline.type_plane %></li>
- </ul>
+ <%= link_to image_tag(airline.image, :class => 'thumb'), airline unless airline.image.nil?%>
 
+ <ul>
+   <li><em>Name: </em><%= airline.name %></li>
+   <li><em>Location: </em><%= airline.location %></li>
+ <li><em>Fuel used per year: </em><%= number_with_delimiter airline.fuel, :delimiter => ',' %> gallon</li>
+   <li><em>Total planes: </em><%= airline.num_plane %></li>
+   <li><em>Plane type: </em><%= airline.type_plane %></li>
+ </ul>
+</div>
 <% end %>

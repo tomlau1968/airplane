@@ -1,16 +1,20 @@
-<h1>All Airplanes</h1>
- <%= image_tag "aviation-specials-plane-taking-off.jpg", :class => 'bgimg' %>
+<div class="headline">
+  <h1>All Airplanes</h1>
+</div>
+ <%= image_tag "turbine-jet-engine_small.jpg", :class => 'bgimg' %>
+
+ <div class="inputbox">
 <% @airplanes.each do |airplane| %>
- <%= image_tag airplane.image, :class => 'thumb' unless airplane.image.nil?%>
+ <%= link_to image_tag(airplane.image, :class => 'thumb'), airplane unless airplane.image.nil?%>
 
  <ul>
-   <li>Name: <%= link_to airplane.name, airplane %></li>
-   <li>Engine: <%= airplane.engine %></li>
-   <li>Maxiumn Speed: <%=  airplane.speed %></li>
-   <li>Maxiumn Passenger: <%= airplane.passenger %></li>
-   <li>Weight without passenger: <%= airplane.weight %></li>
+   <li><em>Name: </em><%= airplane.name %></li>
+   <li><em>Engine: </em><%= airplane.engine %></li>
+   <li><em>Top Speed: </em><%=  airplane.speed %></li>
+   <li><em>Passenger: </em><%= airplane.passenger %></li>
+   <li><em>Weight: </em><%= number_with_delimiter airplane.weight, :delimiter => ',' %> ton</li>
  </ul>
-
+</div>
 
 
 <% end %>

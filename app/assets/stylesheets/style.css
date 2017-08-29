@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@import url('https://fonts.googleapis.com/css?family=Rokkitt');
+
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
 
 
 body {
-  @import url('https://fonts.googleapis.com/css?family=Lato');
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   margin: 0;
@@ -17,9 +23,10 @@ padding-right: 10px;
 margin: 0;
 border: 0;
 padding: 20px;
+background-color: #f4d50c;
 }
 
-a {
+.container a {
 text-decoration: none;
 letter-spacing: 15%;
 word-spacing: 30%;
@@ -29,29 +36,66 @@ margin: 20px 6px 4px 6px;
 padding: 4px 6px 4px 6px;
 }
 
-a:hover {
-  color: lightblue;
+.container a:hover {
+  color: white;
+  border: black solid 2px;
 }
 
-.front_background {
-background-image: image-url('aviation-specials-plane-taking-off.jpg');
-background-repeat: no-repeat;
-background-size: 100%;
+.inputbox {
+  color: white;
+  font-size: 14px;
+  border: 1px solid #f4d50c;
+  max-width: 20%;
+  margin-left: 2em;
+  height: auto;
+}
+
+.thumb {
+  display: inline-block;
+  max-width: 100%;
+}
+
+em {
+color: #f4d50c;
+
 }
 
 .bgimg {
   position: fixed;
   z-index: -1;
-  height: 100%;
-  top: 0;
+  width: 100%;
+  top: 8%;
 }
 
-.onair {
-  @import url('https://fonts.googleapis.com/css?family=Arvo');
-  font-family: 'Arvo', serif;
-  font-size: 50px;
-  color: black;
+.headline {
+  margin: 2% auto;
+  display: block;
+  width: 35%;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  font-family: 'Cutive Mono', monospace;
+  letter-spacing: 20%;
+  word-spacing: 5%;
 }
+
+
+.logo {
+margin: 30% auto;
+display: block;
+width: 13%;
+}
+
+
+/*.onair {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  top: 50%;
+}*/
 
 .video {
  position: fixed;

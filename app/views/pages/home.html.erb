@@ -1,12 +1,6 @@
 
-
-
-<div class="onair">
-  <h1>on Air</h1>
-</div>
-
-<%= video_tag "747_landing.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
-
+<%= video_tag "iStock-166062310_mid.mov", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
+ <%= image_tag "airlogo.png", :class => 'logo' %>
 
 <% if @current_user.present? %>
   Welcome back <%= @current_user.email %>
