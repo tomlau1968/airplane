@@ -1,5 +1,12 @@
-<h1>Airplanes and Airplines</h1>
-<h2>Project01_home.html.erb</h2>
+
+
+
+<div class="onair">
+  <h1>on Air</h1>
+</div>
+
+<%= video_tag "747_landing.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
+
 
 <% if @current_user.present? %>
   Welcome back <%= @current_user.email %>

@@ -1,0 +1,65 @@
+
+
+body {
+  @import url('https://fonts.googleapis.com/css?family=Lato');
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.container {
+font-size: 14px;
+text-align: right;
+padding-right: 10px;
+/*display: inline-block;*/
+margin: 0;
+border: 0;
+padding: 20px;
+}
+
+a {
+text-decoration: none;
+letter-spacing: 15%;
+word-spacing: 30%;
+color: black;
+border: black solid 1px;
+margin: 20px 6px 4px 6px;
+padding: 4px 6px 4px 6px;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+.front_background {
+background-image: image-url('aviation-specials-plane-taking-off.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+.bgimg {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  top: 0;
+}
+
+.onair {
+  @import url('https://fonts.googleapis.com/css?family=Arvo');
+  font-family: 'Arvo', serif;
+  font-size: 50px;
+  color: black;
+}
+
+.video {
+ position: fixed;
+ top: 50%; left: 50%;
+ z-index: -1;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ transform: translate(-50%, -50%);
+}
