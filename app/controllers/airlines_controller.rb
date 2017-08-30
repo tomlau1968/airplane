@@ -38,9 +38,14 @@ def update
 end
 
 def destory
-  airline =Airline find params [:id]
+  airline = Airline.find params [:id]
   airline.destory
   redirect_to airlines_path
 end
+
+private
+  def airline_params
+    params.require(:airline).permit(:name, :location, :fuel, :num_plane, :image, :type_plane) #
+  end
 
 end

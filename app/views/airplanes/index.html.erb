@@ -3,8 +3,9 @@
 </div>
  <%= image_tag "turbine-jet-engine_small.jpg", :class => 'bgimg' %>
 
- <div class="inputbox">
+
 <% @airplanes.each do |airplane| %>
+<div class="inputbox">
  <%= link_to image_tag(airplane.image, :class => 'thumb'), airplane unless airplane.image.nil?%>
 
  <ul>

@@ -2,8 +2,9 @@
 <h1>Aviation Sign Up</h1>
 </div>
 
-<div class="boxform">
+<%= image_tag "airhead.jpg", :class => 'bgimg' %>
 
+<div class="boxform">
 <% if @user.errors.any? %>
   <ol>
     <% @user.errors.full_messages.each do |msg| %>

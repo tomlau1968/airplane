@@ -1,13 +1,22 @@
+
 <div class="headline">
 <h1>Aviation Sign In</h1>
 </div>
 
+<%= image_tag "airplane-jet-aviation-aircraft.jpg", :class => 'bgimg' %>
+
+<div class="boxform">
 <%= form_tag login_path do %>
+<fieldset>
   <%= label_tag :email %>
   <%= email_field_tag :email, nil %>
+  </fieldset>
 
+<fieldset>
   <%= label_tag :password %>
   <%= password_field_tag :password, nil %>
+  </fieldset>
 
   <%= submit_tag 'Login' %>
 <% end %>
+</div>
