@@ -1,8 +1,12 @@
+<%= image_tag "018067-vroeg-II1.jpg", :class => 'bgimg' %>
+<div class="headline">
 <h1>Edit User</h1>
-
+</div>
+<div class="inputboxlong">
 <%= form_for @user do |f| %>
   <%= f.label :email %>
   <%= f.email_field :email %>
 
   <%= f.submit %>
 <% end %>
+</div>

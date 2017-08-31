@@ -1,3 +1,5 @@
+<%= image_tag "wingwindow.jpg", :class => 'bgimg' %>
+<div class="inputboxlong">
 <%= form_for @airplane do |f| %>
 <fieldset>
 <%= f.label :name %>
@@ -10,7 +12,7 @@
 </fieldset>
 
 <fieldset>
-  <%= f.label :speed, " Top Speed (km/hour)"  %>
+  <%= f.label :speed, " Top Speed (km/hour) "  %>
   <%= f.number_field :speed%>
 </fieldset>
 
@@ -35,3 +37,4 @@
 
 
 <% end %>
+</div>

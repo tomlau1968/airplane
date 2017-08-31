@@ -1,3 +1,5 @@
+<%= image_tag "airport2.jpg", :class => 'bgimg' %>
+<div class="inputboxlong">
 <%= form_for @airline do |f| %>
 <fieldset>
 <%= f.label :name %>
@@ -10,17 +12,17 @@
 </fieldset>
 
 <fieldset>
-  <%= f.label :fuel, "gallons/year"%>
+  <%= f.label :fuel, " Fuel used per year"%>
   <%= f.text_field :fuel %>
 </fieldset>
 
 <fieldset>
-  <%= f.label :num_plane %>
+  <%= f.label :num_plane, " Total planes" %>
   <%= f.text_field :num_plane %>
 </fieldset>
 
 <fieldset>
-  <%= f.label :type_plane %>
+  <%= f.label :type_plane, " Type of plane" %>
   <%= f.text_field :type_plane %>
 </fieldset>
 
@@ -34,3 +36,4 @@
 </fieldset>
 
 <% end %>
+</div>

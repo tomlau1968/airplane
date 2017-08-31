@@ -37,9 +37,9 @@ def update
   redirect_to airline
 end
 
-def destory
-  airline = Airline.find params [:id]
-  airline.destory
+def destroy
+  airline = Airline.find params[:id]
+  airline.destroy
   redirect_to airlines_path
 end
 

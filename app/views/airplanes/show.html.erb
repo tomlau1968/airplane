@@ -1,16 +1,22 @@
-<h1><%= @airplane.name %></h1>
+<!-- <div class="showbox"> -->
+  <div class="headlinesmall">
+    <h1><%= @airplane.name %></h1>
+  </div>
 
-<% unless @airplane.image.nil? %>
-<%= image_tag @airplane.image, :class => 'feature' %>
-<% end %>
+  <% unless @airplane.image.nil? %>
+  <%= image_tag @airplane.image, :class => 'feature' %>
+  <% end %>
 
-<p>Name: <%= @airplane.name %></p>
-<p>Engine: <%= @airplane.engine %></p>
-<p>Speed (miles/hr): <%= @airplane.speed %></p>
-<p>Passenger: <%= @airplane.passenger %></p>
-<p>Weight (tonnes without passenger): <%= @airplane.weight %></p>
+<div class="showbox">
+  <p>Name: <%= @airplane.name %></p>
+  <p>Engine: <%= @airplane.engine %></p>
+  <p>Top speed (km/hr): <%= @airplane.speed %></p>
+  <p>Passenger carry: <%= @airplane.passenger %></p>
+  <p>Weight (without passenger): <%= number_with_delimiter(@airplane.weight, :delimiter => ',' )%> ton</p>
+  </div>
 
-<div class="controls">
-  <%= link_to "Edit airplane", edit_airplane_path(@airplane) %>
-  <%= link_to "Delete airplane", @airplane, :method => :delete, :data => {:confirm => 'Are you sure?'} %>
-</div>
+  <div class="controls">
+    <%= link_to "Edit airplane", edit_airplane_path(@airplane) %>
+    <%= link_to "Delete airplane", @airplane, :method => :delete, :data => {:confirm => 'Are you sure?'} %>
+  </div>
+<!-- </div> -->
