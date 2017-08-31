@@ -1,16 +1,20 @@
+<div class="headlinesmall">
 <h1><%= @airline.name %></h1>
+</div>
 
 <% unless @airline.image.nil? %>
 <%= image_tag @airline.image, :class => 'feature'%>
 <% end %>
 
-<p>Name: <%= @airline.name %></p>
-<p>Location: <%= @airline.location %></p>
-<p>Fuel (gallons/year): <%= @airline.fuel %></p>
-<p>Number of planes: <%= @airline.num_plane %></p>
-<p>Type of plane: <%= @airline.type_plane %></p>
+<div class="showbox">
+<p><strong>Name: </strong><%= @airline.name %></p>
+<p><strong>Location: </strong><%= @airline.location %></p>
+<p><strong>Fuel </strong>(gallons/year): <%= @airline.fuel %></p>
+<p><strong>Number of planes: </strong><%= @airline.num_plane %></p>
+<p><strong>Type of plane: </strong><%= @airline.type_plane %></p>
 
 <div class="controls">
   <%= link_to "Edit airline", edit_airline_path(@airline) %>
   <%= link_to "Delete airline", @airline, :method => :delete, :data => {:confirm => 'Are you sure?'} %>
+</div>
 </div>

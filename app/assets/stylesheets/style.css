@@ -68,6 +68,11 @@ padding: 4px 6px 4px 6px;
   padding: 2em;
 }
 
+
+.showpage {
+  background: black;
+}
+
 .showbox {
 margin: auto;
 display: block;
@@ -140,12 +145,17 @@ display: block;
 width: 13%;
 }
 
+/*.controls {
+  margin: auto;
+  display: block;
+}*/
+
 .controls a{
   text-decoration: none;
   letter-spacing: 15%;
   word-spacing: 30%;
   color: black;
-  border: black solid 1px;
+  border: #f4d50c solid 1px;
   margin: 20px 6px 4px 6px;
   padding: 4px 6px 4px 6px;
 }
